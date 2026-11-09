@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sistem-legal-rag"
+version = "0.1.0"
+description = "Asistente RAG para consultar contratos de arrendamiento con recuperación híbrida y rank fusion"
+requires-python = ">=3.10"
+dependencies = [
+    "chromadb",
+    "langchain-classic",
+    "langchain-community",
+    "langchain-core",
+    "langchain-openai",
+    "langchain-text-splitters",
+    "pypdf",
+    "streamlit",
+]
+
+[tool.setuptools]
+py-modules = ["app", "config", "prompts", "rag_system"]
